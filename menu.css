@@ -1,0 +1,68 @@
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 500ms ease-out;
+}
+
+.menu-toggle .fa {
+  display: block;
+  line-height: 0;
+  margin: 0;
+  font-size: 28px;
+  margin: 0 0 8px 0;
+  transition: all 500ms ease-out;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 32px 200px 0 32px;
+  border-left: 1px solid #e4e4e4;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(105%);
+  transition: transform 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -moz-transition: transform 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.menu-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  padding: 7px 0 0 0;
+  display: block;
+  font-size: 20px;
+}
+
+#overlay-input {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+input[type="checkbox"]#overlay-input {
+  visibility: hidden;
+}
+input[type="checkbox"]#overlay-input:checked ~ .menu {
+  transform: translateX(0);
+}
+
+input[type="checkbox"]#overlay-input:checked ~ .menu-toggle .fa:nth-child(1) {
+  transform: rotate(45deg);
+}
+input[type="checkbox"]#overlay-input:checked ~ .menu-toggle .fa:nth-child(2) {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+input[type="checkbox"]#overlay-input:checked ~ .menu-toggle .fa:nth-child(3) {
+  transform: rotate(-45deg) translate(11px, -11px);
+}

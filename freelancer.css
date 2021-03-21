@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: hsl(0, 0%, 100%);
+  color: #333333;
+  font-family: Vasir;
+}
+
+body,
+p,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+select {
+  font-weight: 300;
+}
+
+text,
+textarea {
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 140px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#about {
+  padding: 72px 72px 10 72px;
+}
+
+#skills {
+  background: #eee;
+}
+.site-header {
+  position: fixed;
+  border: 1px solid #e4e4e4;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 3;
+}
+.brand {
+  line-height: 1;
+  font-size: 24px;
+}
+
+.brand a {
+  font-family: cursive;
+}
+
+/*
+Global css
+-----------------------------------------------------------
+*/
+html {
+  scroll-behavior: smooth;
+}
+html.no-scroll,
+body.no-scroll {
+  overflow: visible !important;
+}
+
+section {
+  padding: 42px 72px 10 72px;
+}
+a {
+  text-decoration: none;
+}
+.section-header {
+  margin: 0 0 40px 0;
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 5px 8px;
+  color: #fff;
+  font-family: cursive;
+  border-radius: 4px;
+  background: #cccccc;
+  transition: all 0.5s;
+}
+.btn-primary:hover {
+  background-color: #b9b0cf;
+  color: #000000;
+}
+.btn-primary {
+  background: #6b5b95;
+}
+.feature-item {
+  padding: 2px;
+}
+.feature-icon {
+  font-size: 24px;
+  background: #6b5b95;
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+.feature-title {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+}
+
+.slider-list {
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+
+.slider-item {
+  padding: 0;
+}
+/*
+other css
+*/
+
+.img-rounded {
+  border-radius: 100%;
+}
+.gallery img {
+  min-height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.gallery img:hover {
+  padding: 1px;
+  opacity: 0.3;
+}
+
+#avatar {
+  margin: auto auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.site-title {
+  font-size: 28px;
+  margin: 0;
+  font-family: cursive;
+  font-weight: bolder;
+  line-height: 20px;
+}
+
+.lead {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.3em;
+  font-family: Verdana, sans-serif;
+  color: #b5aeae;
+}
+
+/*
+modal----------------
+*/
+#modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+#modal:target {
+  opacity: 1;
+  display: initial;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 6% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+.copy {
+  margin: 10px 0;
+}
+/* .copy a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #e74c3c;
+} */
+.project-title {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+  font-family: cursive;
+}
+
+/*
+client list -----------------------------------------------------
+*/
+#clients {
+  background: #eee;
+}
+.client-list {
+  padding: 0;
+  margin: 0;
+}
+
+.client-item {
+  text-align: center;
+  background: #fcfcfc;
+  padding: 50px;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+.client-avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.client-title {
+  font-size: 24px;
+  font-weight: 200;
+  font-family: cursive;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.client-description {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 10px;
+  color: #a99db1;
+  font-weight: bold;
+}
+.client-author {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+@media screen and (max-width: 768px) {
+  .section-header {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider-item {
+    margin: 5px;
+  }
+  .project-description {
+    text-align: center;
+  }
+  .project-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 722px) {
+  .slider-list {
+    padding: 0 0 0 50px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .slider-list {
+    padding: 0;
+  }
+}
