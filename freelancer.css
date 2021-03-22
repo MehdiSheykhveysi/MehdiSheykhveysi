@@ -156,7 +156,8 @@ other css
   min-height: 100%;
   transition: all 0.3s ease-in-out;
 }
-.gallery img:hover {
+.gallery img:hover,
+.gallery img:active {
   transform: scale(1.3);
 }
 
