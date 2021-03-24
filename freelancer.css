@@ -378,7 +378,7 @@ textarea::placeholder {
 .contact-list li {
   font-size: 12px;
   margin: 0 0 0 20px;
-  color: gray;
+  color: rgb(201, 197, 197);
 }
 
 @media screen and (max-width: 768px) {
