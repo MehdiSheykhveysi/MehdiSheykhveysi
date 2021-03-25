@@ -239,17 +239,17 @@
                     </ul>
                 </div>
                 <div class="col6">
-                    <form id="contact-form" action="procces">
+                    <form id="contact-form" method="POST" action="https://formspree.io/f/xdoynlgz">
                         <h3 class="section-title form-title">Contact Me</h3>
                         <div class="form-feild-text">
-                            <input class="text" placeholder="Name" type="text" />
+                            <input class="text" name="name" placeholder="Name" type="text" />
                         </div>
                         <div class="form-feild-text">
-                            <input class="text" placeholder="Email" type="email" />
+                            <input class="text" name="email" placeholder="Email" type="email" />
                         </div>
 
-                        <textarea class="textarea" placeholder="Tell me about your project"></textarea>
-                        <input class="send" type="button" value="Send" />
+                        <textarea class="textarea" name="message" placeholder="Tell me about your project"></textarea>
+                        <input class="send" type="submit" value="Send" />
                     </form>
                 </div>
             </div>

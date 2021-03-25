@@ -361,6 +361,7 @@ textarea::placeholder {
   background: rgba(255, 255, 255, 0.1);
   border-color: #222;
   outline: #222;
+  color: white;
   font-style: italic;
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
     transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
@@ -371,13 +372,15 @@ textarea::placeholder {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  margin: 0;
+  justify-content: left;
 }
 .contact-list i {
   margin: 5px;
 }
 .contact-list li {
   font-size: 12px;
-  margin: 0 0 0 20px;
+  margin: 0 20px 0 0;
   color: rgb(201, 197, 197);
 }
 
