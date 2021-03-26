@@ -383,6 +383,10 @@ textarea::placeholder {
   margin: 0 20px 0 0;
   color: rgb(201, 197, 197);
 }
+.site-footer {
+  background: rgb(0, 0, 0, 0.8);
+  color: gray;
+}
 
 @media screen and (max-width: 768px) {
   .section-header {
